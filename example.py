@@ -16,7 +16,7 @@ demoDatasetName = "demo-{0}".format(uuid.uuid4())
 demo.createDataset(demoDatasetName,{"title":str,"description":str,"price":float})
 
 # List dataset(s)
-for dataset in demo.getDataset().getDatasetList():
+for dataset in demo.getDatasetList():
     print(dataset.name)
     
 # Upload document for demo dataset
